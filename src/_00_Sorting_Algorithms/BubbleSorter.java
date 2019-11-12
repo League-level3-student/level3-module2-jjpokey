@@ -10,7 +10,20 @@ public class BubbleSorter extends Sorter{
 	//   progress on the graph.
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
-		
+		for(int a = 0; a < array.length; a++) {
+			for(int b = 0; b < array.length - 1; b++) {
+				if(array[b] > array[b + 1]) {
+					int save = array[b];
+					int save2 = array[b + 1];
+					array[b] = save2;
+					array[b + 1] = save;
+					display.updateDisplay();
+				}
+				
+					
+				
+			}
+		}
 	}
 	
 }

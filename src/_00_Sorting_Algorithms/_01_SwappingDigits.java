@@ -24,13 +24,29 @@ class _01_SwappingDigits {
 	
 	//1. Complete the method so that the first two elements of the array are swapped
 	public static void swapArrayOfTwo(int[] arr) {
-		
+		int saved = arr[0];
+		int saved2 = arr[1];
+		arr[0] = saved2;
+		arr[1] = saved;
 	}
 	
 	//2. Complete the method so that it sorts the array using a bubble sort.
 	//   Iterate through the array and when you find two elements that are out
 	//   of order, swap them. Repeat this until the array is in order.
-	public static void sortIntArray(int[] arr) {
+	public static void sortIntArray(int[] arr) {	
+		for(int a = 0; a < arr.length; a++) {
+			for(int b = 0; b < arr.length - 1; b ++) {
+			if(arr[b] <= arr[b + 1]) {
+				continue;
+			}
+			else {
+				int saved = arr[b];
+				int saved2 = arr[b + 1];
+				arr[b] = saved2;
+				arr[b + 1] = saved;
+			}
+		} 
+		}
 		
 	}
 	
@@ -38,6 +54,14 @@ class _01_SwappingDigits {
 	//   *Hint* it helps to sort it first.
 	//   *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
-		return 0;
+		
+		sortIntArray(arr);
+		
+		if(arr.length % 2 == 0) {
+			return arr[arr.length / 2];
+		}
+		else {
+			return arr[arr.length / 2];
+		}
 	}
 }
