@@ -7,13 +7,13 @@ import javax.swing.JOptionPane;
  * Run the demo VisualSorter.jar to see the finished product. 
  * Then complete the steps in the classes in the following order:
  * 
- * BubbleSorter
- * SelectionSorter
- * InsertionSorter
- * QuickSorter
- * MergeSorter
+ * BubbleSorter DONE
+ * SelectionSorter DONE
+ * InsertionSorter DONE
+ * QuickSorter DONE
+ * MergeSorter DONE
  * HeapSorter
- * BogoSorter
+ * BogoSorter DONE
  */
 
 public class _02_SortingAlgorithms {

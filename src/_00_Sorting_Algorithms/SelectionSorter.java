@@ -19,13 +19,13 @@ public class SelectionSorter extends Sorter {
 			for(int j = i + 1; j < array.length; j++) {
 				//4. if the array element at j is less than the 
 				//   element at index, then set index equal to j
-				if(array[j] < array[index]) { // OUT OF BOUNDS EXEPTION
+				if(array[j] < array[index]) { 
 					index = j;
 				}
 			//5. swap the array element at index with the array element at i
-			int s = index;
+			int s = array[index];
 			int s2 = array[i];
-			index = s2;
+			array[index] = s2;
 			array[i] = s;
 			display.updateDisplay();
 		}
