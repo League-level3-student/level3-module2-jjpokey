@@ -35,13 +35,16 @@ counter = counter * 2;
 			minimum = array.length - 1;
 		}
 		//9. use the binary search method you wrote using the following parameters:
+		_01_BinarySearch.binarySearch(array, counter / 2, minimum, value);
+			return _01_BinarySearch.binarySearch(array,counter / 2, minimum, value);
+		
 		//		the array to be searched
 		//		half of the counter
-		//		minimum                       //ASK ABOUT THIS!!!!!!!
+		//		minimum                    
 		//		the value to be found
 		
 		//10. return the result
-		return 0;
+		
 	}
 		return -1;
 }
