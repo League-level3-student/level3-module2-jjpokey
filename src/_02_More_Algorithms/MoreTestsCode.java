@@ -10,7 +10,9 @@ public class MoreTestsCode {
 	//prime
 	public static boolean isPrime(int n) {
 		//for(int i = 2; i < )
-	//}
+		
+		return false;
+	}
 	
 	//squared
 	public static boolean isSquare(int n) {
