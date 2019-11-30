@@ -57,4 +57,50 @@ for(int i = 0; i < oysters.size(); i++) {
 		}
 		return false;
 	}
+
+	public static List<Double> sortScores(List<Double> results) {
+		for(int a = 0; a < results.size(); a++) {
+for(int i = 0; i < results.size() - 1; i++) {
+	if(results.get(i) > results.get(i + 1)) {
+		double s = results.get(i);
+		double s2 = results.get(i + 1);
+		results.set(i, s2);
+		results.set(i + 1, s);
+	}
+}
+		
+		}
+		return results;
+	}
+
+	public static List<String> sortDNA(List<String> unsortedSequences) {
+for(int a = 0; a < unsortedSequences.size(); a++) {
+	for(int i = 0; i < unsortedSequences.size() - 1; i++) {
+		if(unsortedSequences.get(i).length() > unsortedSequences.get(i + 1).length()) {
+			String s = unsortedSequences.get(i);
+			String s2 = unsortedSequences.get(i + 1);
+			unsortedSequences.set(i, s2);
+			unsortedSequences.set(i + 1, s);
+				
+			
+		}
+	}
+}
+		return unsortedSequences;
+	}
+
+	public static List<String> sortWords(List<String> words) {
+for(int a = 0; a < words.size(); a++) {
+	for(int i = 0; i < words.size() - 1; i++) {
+		if(words.get(i).compareTo(words.get(i + 1)) > 0 ) {
+			String s = words.get(i);
+			String s2 = words.get(i + 1);
+			words.set(i, s2);
+			words.set(i + 1, s);
+			
+		}
+	}
+}
+		return words;
+	}
 }
